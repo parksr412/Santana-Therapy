@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+
+.article{
+    padding: 5em;
+}
+
+.site-logo img{
+    height: 103px;
+    width: 393px;
+}
+
+h1{
+    font-size: 55px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 15;
+    color: #1D4D5D;
+}
+
+h1 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav{
+    text-align: right;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline;
+    padding-right: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #1D4D5D;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+ul li a:hover{
+    color:#BDDBD0;
+}
+
+.nav ul li a.activepage{
+    color:#BDDBD0;
+}
+
+.logonav{
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+
+}
+
+.logonav .site-logo{
+    flex-basis: 50%;
+}
+
+
+.logonav .nav{
+    flex-basis: 50%;
+}
+
+.container{
+    display: flex;
+    column-gap: 50px;
+    animation: opacity 5s 1;
+}
+
+.container .specialties{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    margin-right: 3em;
+    margin-top: 50px;
+}
+
+
+@keyframes opacity{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container .modalities{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    margin-right: 3em;
+    margin-top: 50px;
+}
+
+
+
+h2{
+    font-size: 40px;
+    font-weight: 200;
+    font-family: 'Lora';
+    color: #E0A458;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'DM Sans', serif;
+    color: #1D4D5D;
+    font-weight: 500;
+    font-style: none;
+}
+
+.content p a{
+    text-decoration: none;
+    color: #1D4D5D;
+}
+
+p a:hover{
+    color:#BDDBD0;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'DM Sans', serif;
+    color: #1D4D5D;
+    font-weight: 500;
+}
+
+.background{
+    background-color: #BDDBD0;
+    width: 110%;
+    height: 200px;
+    margin: auto;
+    animation: opacity 5s 1;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .article{
+        padding: 2em;
+    }
+
+    .logonav {
+        flex-direction: column;
+    }
+
+    .nav{
+        width: auto;
+        max-width: none;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .headshot{
+        border-radius: 50%;
+        box-shadow: unset;
+        margin-left: 0;
+    }
+
+    h2{
+        font-size: 30px;
+}
+}
