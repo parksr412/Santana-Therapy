@@ -68,6 +68,7 @@ ul li a:hover{
     flex-basis: 40%;
     display: inline-block;
     max-width: 425px;
+    border-radius: 5%;
     /* box-shadow: -25px 25px 0 #BDDBD0;
     max-width: 100%;
     margin-top: 71px;
@@ -142,7 +143,8 @@ p a:hover{
     display: flex;
     column-gap: 50px;
     /* animation: opacity 5s 1; */
-    /* padding-top: 250px; */
+    padding-top: 40px;
+    padding-bottom: 10px;
     background-color: #12323D;
     box-shadow: 0 0 0 100vmax #12323D;
     clip-path: inset(0 -100vmax);
@@ -151,12 +153,14 @@ p a:hover{
 
 
 .about-container .headshot{
+    margin-top: 15px;
     height: 425px;
     width: 425px;
     flex-basis: 40%;
     display: inline-block;
     max-width: 425px;
-    padding-top: 25px;
+    /* padding-top: 25px; */
+    border-radius: 5%;
 
 
 
@@ -202,8 +206,8 @@ p a:hover{
     padding-bottom: 250px;
 }
 
-.practice-container .specialties{
-    flex-basis: 50%;
+.practice-container .practice{
+    flex-basis: 40%;
     display: flex;
     flex-direction: column;
     row-gap: 2px;
@@ -211,7 +215,70 @@ p a:hover{
     margin-top: 50px;
 }
 
-.specialities h2{
+.practice-container .tab-box{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    margin-right: 3em;
+    margin-top: 50px;
+}
+
+.tab-box{
+    background-color: rgba(189, 219, 208, .3);
+    border-radius: var(--radius);
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.btn-container{
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tab-btn:nth-child(1) {
+    border-top-left-radius: var(--radius);
+  }
+  .tab-btn:nth-child(3) {
+    border-top-right-radius: var(--radius);
+  }
+  .tab-btn {
+    padding: 1rem 0;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    display: block;
+    background: #1D4D5D;
+    cursor: pointer;
+    transition: var(--transition);
+    letter-spacing: var(--spacing);
+  }
+
+  .tab-btn:hover:not(.active) {
+    background: #E7BE88;
+    color: var(--clr-primary-5);
+  }
+  .practice-tab-content {
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    padding: 2rem 1.5rem;
+  }
+
+  /* hide content */
+  .box-content {
+    display: none;
+  }
+  .tab-btn.active {
+    background: orange;
+  }
+  .box-content.active {
+    display: block;
+  }
+
+
+/* .specialities h2{
     font-size: 40px;
     font-weight: 200;
     font-family: 'Lora';
@@ -225,7 +292,7 @@ p a:hover{
     color: #1D4D5D;
     font-weight: 500;
     font-style: none;
-}
+} */
 
 .fees-container{
     background-color: #12323D;
@@ -255,8 +322,27 @@ p a:hover{
 
 
 .consult-container{
+    display: flex;
+    column-gap: 50px;
     padding-top: 100px;
 }
+
+.consult-container .consult-label{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    margin-right: 3em;
+}
+
+.consult-container .form{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    margin-right: 3em;
+}
+
 fieldset{
     border: none;
     background: white;
@@ -267,8 +353,6 @@ fieldset{
 	box-sizing: border-box;
 	width: 80%;
 	margin: 0 10%;
-
-
 }
 
 
@@ -296,7 +380,7 @@ input[type=text] {
 	font-family: 'DM Sans';
 	color: #2C3E50;
 	font-size: 13px;
-  }
+}
 
 textarea{
     padding: 10px;
