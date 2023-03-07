@@ -19,3 +19,18 @@ box.addEventListener("click", function(e) {
         element.classList.add("active");
     }
 });
+
+function observerCallback(entries){
+
+entries.forEach((entry)=>{
+    if (entry.isIntersecting){
+        entry.target.classList.add("activeAnimate")
+    }
+})
+}
+const animateTargets = document.querySelectorAll(".willAnimate");
+const observer = new IntersectionObserver(observerCallback)
+// observer.observe(animateTargets)
+animateTargets.forEach((target)=>{
+    observer.observe(target)
+})
