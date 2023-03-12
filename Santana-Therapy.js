@@ -34,3 +34,21 @@ const observer = new IntersectionObserver(observerCallback)
 animateTargets.forEach((target)=>{
     observer.observe(target)
 })
+
+
+
+const nav = document.querySelector('#stickynav');
+const navTop = nav.offsetTop;
+
+function stickyNavigation() {
+    if (window.scrollY >= navTop) {
+        // document.body.style.paddingTop = nav.offsetHeight + 'px';
+        document.body.classList.add('fixed-nav');
+    } else {
+        // document.body.style.paddingTop = 0;
+        document.body.classList.remove('fixed-nav');
+        }
+    }
+
+
+window.addEventListener('scroll', stickyNavigation);

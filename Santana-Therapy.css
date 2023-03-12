@@ -1,5 +1,5 @@
 body{
-    margin: 0;
+    margin: 0 auto;
     background-color: #F5F5F5;
 }
 
@@ -37,13 +37,25 @@ ul li a:hover{
     display: flex;
     column-gap: 50px;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 0px;
 }
+
+.fixed-nav .logonav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #F5F5F5;
+
+}
+
+
 
 .logonav .site-logo{
     flex-basis: 50%;
+    padding-top: 50px;
     padding-left: 10px;
 }
+
 
 .logonav .nav{
     flex-basis: 50%;
@@ -53,14 +65,13 @@ ul li a:hover{
 
 
 
-
 .container {
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 .section-base{
     align-items: center;
-    padding: 30px 80px;
+    padding: 15px 80px;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -76,7 +87,8 @@ ul li a:hover{
 .home-container{
     display: flex;
     column-gap: 50px;
-    padding-bottom: 120px;
+    padding-top: 0px;
+    padding-bottom: 85px;
 
 }
 
@@ -88,7 +100,7 @@ ul li a:hover{
     max-width: 600px;
     /* border-radius: 1%; */
     padding-left: 60px;
-    padding-top: 0px;
+    padding-top: 150px;
 
 }
 /* @keyframes opacity{
