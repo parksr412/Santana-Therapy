@@ -1,14 +1,16 @@
 body{
     margin: 0 auto;
     background-color: #F5F5F5;
+
+    /* overflow-anchor: none; */
 }
 
 
 
-.site-logo img{
+/* .site-logo img{
     height: 103px;
     width: 393px;
-}
+} */
 
 .nav{
     text-align: right;
@@ -38,14 +40,11 @@ ul li a:hover{
     column-gap: 50px;
     align-items: center;
     padding-top: 0px;
-}
 
-.fixed-nav .logonav {
     position: sticky;
     top: 0;
     z-index: 1;
     background: #F5F5F5;
-
 }
 
 
@@ -93,11 +92,11 @@ ul li a:hover{
 }
 
 .home-container .headshot{
-    height: 600px;
-    width: 600px;
+    /* height: 600px;
+    width: 600px; */
     flex-basis: 40%;
     display: inline-block;
-    max-width: 600px;
+    max-width: 650px;
     /* border-radius: 1%; */
     padding-left: 60px;
     padding-top: 150px;
@@ -421,7 +420,7 @@ textarea{
 }
 
 .willAnimate {
-    transform: translate(0, 60%);
+    transform: translate(0, 40%);
     transition: transform 2s;
 
 }
