@@ -99,7 +99,7 @@ ul li a:hover{
     max-width: 650px;
     /* border-radius: 1%; */
     padding-left: 60px;
-    padding-top: 150px;
+    padding-top: 90px;
 
 }
 /* @keyframes opacity{
@@ -328,12 +328,50 @@ p a:hover{
     font-style: none;
 } */
 
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .fees-title h2{
+    color: white;
+  }
+
+  .section-center p{
+    color: #12323D;
+    font-family: "DM Sans", serif;
+  }
+
+  .question {
+        background-color: white;
+        /* box-shadow: 8px 4px 4px gainsboro; */
+        border-radius: 5px;
+        margin-top: 20px;
+  }
+
+.question-text{
+    display: none;
+  }
+
+.show-text .question-text{
+    display: block;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.show-text .minus-icon {
+    display: inline;
+}
+
+.show-text .plus-icon{
+    display: none;
+}
 
 
-
-
-
-.fees h2{
+/* .fees h2{
     font-size: 40px;
     font-weight: 200;
     font-family: 'Lora';
@@ -346,7 +384,7 @@ p a:hover{
     color: #F5F5F5;
     font-weight: 500;
     font-style: none;
-}
+} */
 
 
 .consult-container{

@@ -51,3 +51,27 @@ animateTargets.forEach((target)=>{
 
 
 // window.addEventListener('scroll', stickyNavigation);
+
+
+
+const questions = document.querySelectorAll(".question");
+
+questions.forEach(function (question) {
+    const btn = question.querySelector(".question-btn");
+    btn.addEventListener("click", function (){
+
+        questions.forEach(function (item){
+            if(item !== question){
+                item.classList.remove("show-text");
+            }
+        });
+        question.classList.toggle("show-text");
+    });
+});
+
+//const questions to hold all questions w/ query selector all
+// create forEach to loop through each question individually
+// const button within each question btn = QUESTION not document .querySelector
+//btn.addEventListener
+//create for each loop to remove and add -- questions.forEach(function (item))
+// question.classList.toggle("show-text")
