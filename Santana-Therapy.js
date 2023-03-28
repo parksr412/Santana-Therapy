@@ -54,20 +54,20 @@ animateTargets.forEach((target)=>{
 
 
 
-const questions = document.querySelectorAll(".question");
+// const questions = document.querySelectorAll(".question");
 
-questions.forEach(function (question) {
-    const btn = question.querySelector(".question-btn");
-    btn.addEventListener("click", function (){
+// questions.forEach(function (question) {
+//     const btn = question.querySelector(".question-btn");
+//     btn.addEventListener("click", function (){
 
-        questions.forEach(function (item){
-            if(item !== question){
-                item.classList.remove("show-text");
-            }
-        });
-        question.classList.toggle("show-text");
-    });
-});
+//         questions.forEach(function (item){
+//             if(item !== question){
+//                 item.classList.remove("show-text");
+//             }
+//         });
+//         question.classList.toggle("show-text");
+//     });
+// });
 
 //const questions to hold all questions w/ query selector all
 // create forEach to loop through each question individually
@@ -75,3 +75,22 @@ questions.forEach(function (question) {
 //btn.addEventListener
 //create for each loop to remove and add -- questions.forEach(function (item))
 // question.classList.toggle("show-text")
+
+
+const questionContainer = document.querySelector(".section-center");
+const questions = questionContainer.querySelectorAll(".question");
+
+questions.forEach(function (question) {
+    const btn = question.querySelector(".question-btn");
+    btn.addEventListener("click", function (){
+
+        const alreadyOpen = questionContainer.querySelector(".show-text");
+        
+        if(alreadyOpen) {
+            alreadyOpen.classList.remove("show-text");
+        }
+        if(alreadyOpen !== question){
+            question.classList.add("show-text");
+        }
+    });
+});
