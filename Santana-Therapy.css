@@ -77,7 +77,18 @@ ul li a:hover{
 
 .section-base:nth-child(even) {
     margin: 20px auto;
-    background-color: #12323D;
+    /* background-color: #B3BFC4; */
+    /* background-color: #12323D; */
+    background: #DEE3E5;
+    /* background-color: #E3BE86 ;  */
+    /* /* background-color: #F1D2A1; */
+    /* background-color: #DCE1DF; pretty nice */
+    /* background-color: #D7E3DE;  */
+    /* background-color: #CB9C5C; */
+    /* background-color: #DFB47A; */
+    /* background: #B78F6D; */
+    /* background-color: #D2B48C	; */
+    /* background-color: #EADDCA	; */
     box-shadow: 0 0 0 100vmax #12323D;
     clip-path: inset(0 -100vmax);
 }
@@ -88,7 +99,6 @@ ul li a:hover{
     column-gap: 50px;
     padding-top: 0px;
     padding-bottom: 85px;
-
 }
 
 .home-container .headshot{
@@ -102,6 +112,8 @@ ul li a:hover{
     padding-top: 90px;
 
 }
+
+
 /* @keyframes opacity{
     0% {
         opacity: 0;
@@ -145,11 +157,11 @@ p a:hover{
 
 
 .button{
-    width: 200px;
+    width: 185px;
     cursor: pointer;
     background-color: #E0A458;
     color: white;
-    font-family: Raleway;
+    font-family: "DM Sans";
     font-size: 15px;
     font-weight: 10;
     /* text-transform: uppercase; */
@@ -168,30 +180,25 @@ p a:hover{
 .about-container{
     display: flex;
     column-gap: 50px;
-    background-image: url(Sqabout.jpeg);
+    /* background-image: url(Sqabout.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: right; */
 }
 
 
 
-/* .about-container .headshot{
-    height: 425px;
-    width: 425px;
+.about-container .headshot{
+    height: 600px;
+    width: 600px;
     flex-basis: 40%;
-    display: inline-block;
-    max-width: 425px;
-    border-radius: 1%; */
+    display: absolute;
+    /* max-width: 425px; */
+}
 
 
 
 
-    /* box-shadow: -25px 25px 0 #BDDBD0;
-    max-width: 100%;
-    margin-top: 71px;
-    margin-left: 25px;
-     */
 
 
 
@@ -212,13 +219,13 @@ p a:hover{
     font-size: 40px;
     font-weight: 200;
     font-family: 'Lora';
-    color: #F5F5F5;
+    color: #12323D;
 }
 
 .about p{
     font-size: 20px;
     font-family: 'DM Sans', serif;
-    color: #F5F5F5;
+    color: #12323D;
     font-weight: 500;
     font-style: none;
 }
@@ -335,7 +342,18 @@ p a:hover{
   }
 
   .fees-title h2{
-    color: white;
+    color: #12323D;
+  }
+
+  .fees-container {
+    display: flex;
+    flex-direction: column;
+    column-gap: 50px;
+  }
+
+  .section-center {
+    display: flex;
+    flex-direction: column;
   }
 
   .section-center p{
@@ -343,15 +361,41 @@ p a:hover{
     font-family: "DM Sans", serif;
   }
 
+  .fees-container .section-center .question-section-one {
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
+  .fees-container .section-center .question-section-two {
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
   .question {
         background-color: white;
         /* box-shadow: 8px 4px 4px gainsboro; */
         border-radius: 5px;
         margin-top: 20px;
+        width: 500px;
+        align-content: center;
+        padding: 10px 20px;
+  }
+
+
+
+
+  .question-btn{
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    color: #E0A458;
+
+
   }
 
 .question-text{
     display: none;
+
   }
 
 .show-text .question-text{
@@ -411,10 +455,8 @@ p a:hover{
 
 fieldset{
     border: none;
-    background: white;
 	border: 0 none;
 	border-radius: 3px;
-	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 	padding: 20px 30px;
 	box-sizing: border-box;
 	width: 80%;
@@ -436,6 +478,7 @@ input[type=text] {
     margin: 20px;
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06); */
 
+    display: inline;
     padding: 15px;
 	border: none;
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
@@ -482,7 +525,7 @@ textarea{
     }
 
     .logonav {
-        flex-direction: column;
+        display: column;
     }
 
     .nav{
